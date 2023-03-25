@@ -1,43 +1,42 @@
-##Full Stack Music Player: React, MongoDB, NodeJs (Express), Firebase: Authentication Google + Cloud Storage
+# Full Stack Music Player: React, MongoDB, NodeJs (Express), Firebase: Authentication Google + Cloud Storage
 
-#URL: 
+### URL: 
 
 https://music-player-41072.web.app
 
-##Tìm hiểu firebase database và storage
+### Tìm hiểu firebase database và storage
 
 Một dịch vụ cơ sở dữ liệu thời gian thực cho phép lưu trữ và đồng bộ dữ liệu giữa các thiết bị và người dùng trong thời gian thực, dữ liệu dạng JSON realtime database ===> đồng bộ dữ liệu trực tiếp client lên server và ngược lại.
 
 Firebase Storage là một dịch vụ lưu trữ tệp, lưu trữ hình ảnh, video, tài liệu,...
 
-
-
-##DOTENV
+### DOTENV
 
 1package của Nodejs app để set env cho biến process.env
 ===> Sau khi sử dụng, biến process.env sẽ có toàn bộ những env đã define ở file .env và dùng bất cứ đâu trong app.
 
-##TAILWINDCSS
+### TAILWINDCSS
+
 https://tailwindcss.com/docs/guides/create-react-app
 
 
-##FRAMER MOTION: animation custom
+### FRAMER MOTION: animation custom
 
-##MOMENT: format date(createdAt, updatedAt,...) from api
+### MOMENT
 
-##REACT-ICONS
+Format date(createdAt, updatedAt,...) from api
 
-##AXIOS
+### REACT-ICONS
 
+### AXIOS
 
-
-#ROUTES TRONG EXPRESS
+### ROUTES TRONG EXPRESS
 
 Phân chia các đối tượng theo từng route
 Các bước chính: export moduled, require vào app.js, use ở app.js với đường dẫn hợp lý.
 
 
-###TOKEN VÀ VALIDATE REQUEST DATA VỚI TOKEN
+### TOKEN VÀ VALIDATE REQUEST DATA VỚI TOKEN
 
 Firebase SDK là một bộ thư viện máy chủ cho phép tương tác với firebase từ môi trường máy chủ backend (nodejs, java, go,...) dưới vai trò là một quản trị viên.
 
@@ -50,7 +49,7 @@ Nhưng server phải biết hiện tại người gửi request là ai, có nh�
 Như vậy khi client gửi request + token lên server, server kết nối firebase qua SDK để biết được token hiện tại, đối chiếu với token mà client gửi tới ===>nếu oke, gửi response và decode (giải mã) token và gửi lại client thông tin chi tiết của user đang đăng nhập.
 
 
-##MONGODB
+### MONGODB
 
 MongoDB là một database cho phép lưu trữ các document với cấu trúc rộng dưới dạng JSON, các document này được lưu bên trong một collection.
 
@@ -59,7 +58,7 @@ NodeJs -------> Mongoose ---> Mongo driver ------> mongoDB
 Khi khởi tạo 1 model schema, lưu data vào model đó và .save() thì trong mongoDB sẽ có data của model đó. Client đăng nhập ===> server dùng firebase admin verify ====>Oke thì tạo 1 schema mới ===> lưu vào mongoDB qua mongoose.
 ===> MongoDB có data của user đăng nhập
 
-###CHỨC NĂNG CHÍNH
+### CHỨC NĂNG CHÍNH
 - Đăng nhập google và validate token
 
 - Play, stop, prev, next,...
@@ -70,7 +69,7 @@ Khi khởi tạo 1 model schema, lưu data vào model đó và .save() thì tron
 
 -Lưu trữ, cập nhật data qua mongoDB và Storage Firebase
 
-###THANK FOR WATCHING!!!
+### THANK FOR WATCHING!!!
 
 
 
