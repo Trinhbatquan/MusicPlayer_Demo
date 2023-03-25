@@ -1,0 +1,18 @@
+.hoverItemCSS:hover .cssHover{
+    opacity: 1;
+    transform: translateY(5px);
+    transition: all 0.5s ease-in-out;
+}
+
+.cssHover {
+    opacity: 0;
+    transform: translateY(0);
+}
+
+.roleCustomStyleChildren {
+    display: none;
+}
+
+.roleCustomStyle:hover .roleCustomStyleChildren{
+    display: block;
+}
